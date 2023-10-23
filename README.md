@@ -1,10 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npm install -g cra-template-typescript\
+npx create-react-app try-react --template typescript
 
-## Available Scripts
+## Goals
 
-In the project directory, you can run:
+Learn about essential React concepts and related terms, such as Babel, Webpack, JSX, components, props, state, and lifecycle.\
+Build a very simple React app that demonstrates the concepts.
 
 ### `npm start`
 
