@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 const greeting = "greeting";
+const displayElementMsg = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => alert((event.target as HTMLElement).id)
 
 function App() {
   return (
@@ -10,24 +11,24 @@ function App() {
       <p>I am writing JSX</p>
       <ul>
         <li>
-          <button
-            onClick={event => alert((event.target as HTMLInputElement).id)}
-          >
-            <span role="img" aria-label="grinning face" id="grinning face">😀</span>
+          <button onClick={displayElementMsg}>
+            <span role="img" aria-label="grinning face" id="grinning face">
+              😀
+            </span>
           </button>
         </li>
         <li>
-          <button
-            onClick={event => alert((event.target as HTMLInputElement).id)}
-          >
-              <span role="img" aria-label="party popper" id="party popper">🎉</span>
+          <button onClick={displayElementMsg}>
+            <span role="img" aria-label="party popper" id="party popper">
+              🎉
+            </span>
           </button>
         </li>
         <li>
-            <button
-              onClick={event =>alert((event.target as HTMLInputElement).id)}
-            >
-              <span role="img" aria-label="woman dancing" id="woman dancing">💃</span>
+          <button onClick={displayElementMsg}>
+            <span role="img" aria-label="woman dancing" id="woman dancing">
+              💃
+            </span>
           </button>
         </li>
       </ul>
