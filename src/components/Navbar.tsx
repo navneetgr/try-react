@@ -82,8 +82,6 @@ function Navbar(props: any) {
   );
 }
 
-export default Navbar;
-
 Navbar.propType = { 
   title: PropTypes.string.isRequired,
   aboutText: PropTypes.string, 
@@ -93,3 +91,5 @@ Navbar.defaultProps = {
   title: "Logo",
   aboutText: "About Us"
 }
+
+export default Navbar;
